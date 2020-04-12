@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="apple-touch-icon" type="image/png" href="https://static.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png" />
+<meta name="apple-mobile-web-app-title" content="CodePen">
+<link rel="shortcut icon" type="image/x-icon" href="https://static.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico" />
+<link rel="mask-icon" type="" href="https://static.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111" />
+<title>CodePen - Google-Homepage</title>
+<style>
+/*overall settings*/
+html{
+  font-family:arial,sans-serif;
+  font-size:13px;
+}
+/*overall settings*/
+
+/*nav-links css*/
+#top-left-list{
+  position:absolute;
+  top:10px;
+  left:0px;
+  list-style-type:none;
+}
+.link{
+  display:inline;
+  padding-left:10px;
+}
+.top-links{
+  color:black;
+  text-decoration:none;
+}
+.top-links:hover{
+    text-decoration:underline;
+  }
+#top-right-list{
+  position:absolute;
+  top:10px;
+  right:10px;
+  list-style-type:none;
+}
+#sign-in{
+  display:inline-block;
+  background:blue;
+  padding:5px 12px;
+  color:white;
+  border:rounded;
+}
+#apps-button {
+  display:inline-block;
+  background-image: url(//web.archive.org/web/20191130234759im_/https://ssl.gstatic.com/gb/images/i1_1967ca6a.png);
+  height:30px;
+  width:30px;
+  vertical-align:middle;
+}
+/*start logo*/
+#logo{
+  position:absolute;
+  top:90px;
+  left:600px;
+  height:100px;
+  width:300px;
+  margin-top:50px;
+  margin-left:-150px;
+}
+/*end logo*/
+
+/*start search-bar*/
+#search-bar{
+position:absolute;
+
+  font: 16px arial,sans-serif;
+line-height: 30px;
+height: 30px !important;
+  width:345px;
+border:none;
+
+padding: 0;
+color: rgba(0,0,0,.87);
+word-wrap: break-word;
+outline: transparent;
+display: block;
+flex: 100%;
+highlight-color: transparent;
+}
+#searchbar-div {
+  position:absolute;
+  top:280px;
+  left:400px;
+  font-family: arial,sans-serif;
+color: #222;
+font-size: small;
+display:flex;
+  width:400px;
+  height:34px;
+
+padding: 10px 8px 2 10px;
+padding-left: 50px;
+  border:solid gray 2px;
+  border-radius:25px;
+}
+svg{
+font-family: arial,sans-serif;
+font-size: small;
+fill: currentColor;
+line-height: 9px;
+color: #9AA0A6;
+  float:left;
+display: block;
+  position:absolute;
+  margin-left:-38px;
+  margin-top:6px;
+  height:25px;
+  
+}
+  .HPVvwb {
+    background: url(//web.archive.org/web/20191130234759im_/https://www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png) 0 0 no-repeat;
+    height: 24px;
+    width: 24px;
+    background-size: 24px;
+    vertical-align: middle;
+    position:absolute;
+    margin-top:280px;
+    margin-left:800px;
+    border:none;
+}
+
+/*start search button*/
+#search-buttons{
+  position:absolute;
+  top:335px;
+  left:475px;
+  list-style-type:none;
+}
+.button-li{
+  display:inline;
+}
+/*end search button*/
+
+/*start bottom navbar*/
+#bottom-navbar-ul{
+  position:absolute;
+  top:500px;
+  margin-bottom:0px;
+  margin-left:-10px;
+  list-style-type:none;
+  width:100%;
+  background-color:#f0f0f0;
+}
+.bottom-left-navbar-li{
+  display:inline;
+  padding:10px;
+  float:left;
+}
+.bottom-right-navbar-li{
+  display:inline;
+  float:right;
+  padding:10px;
+    color:black;
+}
+.bottom-links{
+  color:gray;
+  text-decoration:none;
+}
+</style>
+<script>
+  window.console = window.console || function(t) {};
+</script>
+<script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
+</head>
+<body translate="no">
+
+<nav id="top-left-navbar" class="top-navbar">
+<ul id="top-left-list">
+<li class="link"><a href="https://web.archive.org/web/20191130234759/https://about.google/?fg=1&utm_source=google-US&utm_medium=referral&utm_campaign=hp-header" id="about-link" class="top-links">About
+</a>
+</li>
+<li class="link">
+<a id="store-link" class="top-links" href="https://web.archive.org/web/20191130234759/https://store.google.com/US?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-US">
+Store
+</a>
+</li>
+</ul>
+</nav>
+
+
+<nav id="top-right-navbar" class="top-navbar">
+<ul id="top-right-list">
+<li class="link"><a href="https://web.archive.org/web/20191130234759/https://about.google/?fg=1&utm_source=google-US&utm_medium=referral&utm_campaign=hp-header" id="about-link" class="top-links">Gmail
+</a>
+</li>
+<li class="link">
+<a id="store-link" class="top-links" href="https://web.archive.org/web/20191130234759/https://store.google.com/US?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-US">
+Images
+</a>
+</li>
+<li id="apps-list" class="link">
+<a id="apps-button" class="top-links" href="https://web.archive.org/web/20191130234759/https://www.google.com/intl/en/about/products?tab=wh" title="Google apps" aria-expanded="false" role="button" tabindex="0" data-eqid="0click"></a>
+</li>
+<li class="link">
+<a id="sign-in" class="top-links" href="https://web.archive.org/web/20191130234759/https://store.google.com/US?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-US">
+Sign-in
+</a>
+</li>
+</ul>
+</nav>
+
+
+<img alt="Google" height="92" id="logo" src="https://web.archive.org/web/20191130234759im_/https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+
+
+<div id="searchbar-div">
+<input id="search-bar" class="gLFyf gsfi" maxlength="2048" name="q" type="text" jsaction="paste:puy29d" aria-autocomplete="both" aria-haspopup="false" autocapitalize="off" autocomplete="off" autocorrect="off" role="combobox" spellcheck="false" title="Search" value="" aria-label="Search" data-ved="0ahUKEwjP97vPj5PmAhWRhJ4KHUKtAG8Q39UDCAY">
+<svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path></svg>
+</div>
+<img class="HPVvwb">
+
+<ul id="search-buttons">
+<li class="button-li">
+<button type="button">Google Search</button>
+</li>
+<li class="button-li">
+<button type="button">I'm Feeling Lucky
+</button>
+</li>
+</ul>
+
+
+<nav id="bottom-navbar">
+<ul id="bottom-navbar-ul">
+<li class="bottom-left-navbar-li">
+<a class="bottom-links" href="https://web.archive.org/web/20191130234759/https://www.google.com/intl/en_us/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Advertising</a>
+</li>
+<li class="bottom-left-navbar-li">
+<a class="bottom-links" href="https://web.archive.org/web/20191130234759/https://www.google.com/intl/en_us/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Business</a>
+</li>
+<li class="bottom-left-navbar-li">
+<a class="bottom-links" href="https://web.archive.org/web/20191130234759/https://www.google.com/intl/en_us/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">How Search Works</a>
+</li>
+<li class="bottom-right-navbar-li">
+<a class="bottom-links" href="https://web.archive.org/web/20191130234759/https://www.google.com/intl/en_us/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Privacy</a>
+</li>
+<li class="bottom-right-navbar-li">
+<a class="bottom-links" href="https://web.archive.org/web/20191130234759/https://www.google.com/intl/en_us/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Terms</a>
+</li>
+<li class="bottom-right-navbar-li">
+<a class="bottom-links" href="https://web.archive.org/web/20191130234759/https://www.google.com/intl/en_us/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Settings</a>
+</li>
+</ul>
+</body>
+</html>
